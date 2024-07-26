@@ -30,7 +30,7 @@
 }
 
 .card-big-title {
-  @apply font-extrabold text-2xl lg:text-4xl mb-2;
+  @apply font-bold text-2xl lg:text-4xl mb-2;
 }
 
 .card-big-text {

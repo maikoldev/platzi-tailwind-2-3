@@ -8,3 +8,39 @@
     scrollbar-width: none;
   }
 }
+
+.card {
+  @apply rounded-lg lg:rounded-xl shadow-card overflow-hidden snap-center shrink-0 w-[155px] lg:w-[285px];
+}
+
+.card-image {
+  @apply w-full h-[110px] lg:h-[200px];
+}
+
+.card-title {
+  @apply font-bold text-sm lg:text-2xl mb-1;
+}
+
+.card-text {
+  @apply font-medium max-lg:text-[10px];
+}
+
+.card-big-title {
+  @apply font-extrabold text-2xl lg:text-4xl mb-2;
+}
+
+.card-big-text {
+  @apply font-medium lg:text-2xl;
+}
+
+.faq-title {
+  @apply font-semibold lg:text-4xl lg:text-[35px] text-brick-red mb-2 lg:mb-4;
+}
+
+.faq-text {
+  @apply font-medium text-xs lg:text-[22px] leading-tight;
+}
+
+.btn-explore {
+  @apply inline-block bg-white rounded-3xl py-3 px-12 text-brick-red font-semibold shadow-input;
+}

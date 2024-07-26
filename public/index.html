@@ -190,6 +190,7 @@
               class="group/icon bg-white py-1 px-4 rounded-3xl"
             >
               <svg
+                class="icon-switch"
                 width="29"
                 height="29"
                 viewBox="0 0 29 29"
@@ -209,6 +210,7 @@
           >
             <button type="button" class="group/icon">
               <svg
+                class="icon-search"
                 width="29"
                 height="29"
                 viewBox="0 0 29 29"
@@ -236,12 +238,7 @@
           <p class="max-lg:hidden font-bold text-4xl mb-6">
             Find More Locations Like This
           </p>
-          <a
-            href="#"
-            class="inline-block bg-white rounded-3xl py-3 px-12 text-brick-red font-semibold shadow-input"
-          >
-            Explore More
-          </a>
+          <a href="#" class="btn-explore"> Explore More </a>
         </div>
       </div>
     </section>
@@ -258,72 +255,46 @@
       <div
         class="relative w-full flex gap-4 lg:gap-8 overflow-y-scroll no-scrollbar pb-4"
       >
-        <div
-          class="rounded-lg lg:rounded-xl shadow-card overflow-hidden snap-center shrink-0 w-[155px] lg:w-[285px]"
-        >
-          <img
-            src="./img/norway.jpg"
-            alt="Norway"
-            class="w-full h-[110px] lg:h-[200px]"
-          />
+        <div class="card">
+          <img src="./img/norway.jpg" alt="Norway" class="card-image" />
           <div class="bg-citrus text-white p-4 h-full">
-            <h5 class="font-bold text-sm lg:text-2xl mb-1">Norway</h5>
-            <p class="font-medium max-lg:text-[10px]">Beautiful landscapes</p>
+            <h5 class="card-title">Norway</h5>
+            <p class="card-text">Beautiful landscapes</p>
           </div>
         </div>
-        <div
-          class="rounded-lg lg:rounded-xl shadow-card overflow-hidden snap-center shrink-0 w-[155px] lg:w-[285px]"
-        >
-          <img
-            src="./img/new-york.jpg"
-            alt="New York"
-            class="w-full h-[110px] lg:h-[200px]"
-          />
+        <div class="card">
+          <img src="./img/new-york.jpg" alt="New York" class="card-image" />
           <div class="bg-white text-picton-blue p-4 h-full">
-            <h5 class="font-bold text-sm lg:text-2xl mb-1">New York</h5>
-            <p class="font-medium max-lg:text-[10px]">Concrete jungle</p>
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Concrete jungle</p>
           </div>
         </div>
-        <div
-          class="rounded-lg lg:rounded-xl shadow-card overflow-hidden snap-center shrink-0 w-[155px] lg:w-[285px]"
-        >
-          <img
-            src="./img/yosemite.jpg"
-            alt="Yosemite"
-            class="w-full h-[110px] lg:h-[200px]"
-          />
+        <div class="card">
+          <img src="./img/yosemite.jpg" alt="Yosemite" class="card-image" />
           <div class="bg-citrus text-white p-4 h-full">
-            <h5 class="font-bold text-sm lg:text-2xl mb-1">Yosemite</h5>
-            <p class="font-medium max-lg:text-[10px]">
+            <h5 class="card-title">Yosemite</h5>
+            <p class="card-text">
               A break from the <br />
               world
             </p>
           </div>
         </div>
-        <div
-          class="rounded-lg lg:rounded-xl shadow-card overflow-hidden snap-center shrink-0 w-[155px] lg:w-[285px]"
-        >
-          <img
-            src="./img/seattle.jpg"
-            alt="Seattle"
-            class="w-full h-[110px] lg:h-[200px]"
-          />
+        <div class="card">
+          <img src="./img/seattle.jpg" alt="Seattle" class="card-image" />
           <div class="bg-white text-picton-blue p-4 h-full">
-            <h5 class="font-bold text-sm lg:text-2xl mb-1">Seattle</h5>
-            <p class="font-medium max-lg:text-[10px]">Big City</p>
+            <h5 class="card-title">Seattle</h5>
+            <p class="card-text">Big City</p>
           </div>
         </div>
-        <div
-          class="rounded-lg lg:rounded-xl shadow-card overflow-hidden snap-center shrink-0 w-[155px] lg:w-[285px]"
-        >
+        <div class="card">
           <img
             src="./img/switzerland.jpg"
             alt="Switzerland"
-            class="w-full h-[110px] lg:h-[200px]"
+            class="card-image"
           />
           <div class="bg-citrus text-white p-4 h-full">
-            <h5 class="font-bold text-sm lg:text-2xl mb-1">Switzerland</h5>
-            <p class="font-medium max-lg:text-[10px]">Big City</p>
+            <h5 class="card-title">Switzerland</h5>
+            <p class="card-text">Big City</p>
           </div>
         </div>
       </div>
@@ -345,12 +316,10 @@
             class="object-cover w-full h-full"
           />
           <div
-            class="absolute top-12 max-lg:left-8 lg:right-20 text-white lg:text-right"
+            class="card-big absolute top-12 max-lg:left-8 lg:right-20 text-white lg:text-right"
           >
-            <h3 class="font-extrabold text-2xl lg:text-4xl mb-2">Chicago</h3>
-            <p class="font-medium lg:text-2xl">
-              2 rooms, bathroom and kitchen.
-            </p>
+            <h3 class="card-big-title">Chicago</h3>
+            <p class="card-big-text">2 rooms, bathroom and kitchen.</p>
           </div>
         </div>
         <div class="flex max-lg:flex-col gap-8">
@@ -363,12 +332,10 @@
               class="object-cover w-full h-full"
             />
             <div
-              class="absolute top-12 max-lg:left-8 lg:right-8 text-white lg:text-right max-w-[300px]"
+              class="card-big absolute top-12 max-lg:left-8 lg:right-8 text-white lg:text-right max-w-[300px]"
             >
-              <h3 class="font-extrabold text-2xl lg:text-4xl mb-2">
-                Los Angeles
-              </h3>
-              <p class="font-medium lg:text-2xl">
+              <h3 class="card-big-title">Los Angeles</h3>
+              <p class="card-big-text">
                 4 rooms, 3 bathrooms, kitchen and private pool.
               </p>
             </div>
@@ -381,10 +348,10 @@
                 class="object-cover w-full h-full"
               />
               <div
-                class="absolute top-12 max-lg:left-8 lg:right-14 text-white lg:text-right max-w-[370px]"
+                class="card-big absolute top-12 max-lg:left-8 lg:right-14 text-white lg:text-right max-w-[370px]"
               >
-                <h3 class="font-extrabold text-2xl lg:text-4xl mb-2">Miami</h3>
-                <p class="font-medium lg:text-2xl">
+                <h3 class="card-big-title">Miami</h3>
+                <p class="card-big-text">
                   3 rooms, 2 bathrooms, kitchen and amazing sea view.
                 </p>
               </div>
@@ -396,10 +363,10 @@
                 class="object-cover w-full h-full"
               />
               <div
-                class="absolute top-12 max-lg:left-8 lg:right-8 text-white lg:text-right max-w-[300px]"
+                class="card-big absolute top-12 max-lg:left-8 lg:right-8 text-white lg:text-right max-w-[300px]"
               >
-                <h3 class="font-extrabold text-2xl lg:text-4xl mb-2">Bali</h3>
-                <p class="font-medium lg:text-2xl">
+                <h3 class="card-big-title">Bali</h3>
+                <p class="card-big-text">
                   2 rooms, 2 bathrooms Kitchen and private pool
                 </p>
               </div>
@@ -418,45 +385,29 @@
       <div class="lg:w-8/12">
         <ul>
           <li class="mb-8">
-            <h3
-              class="font-semibold lg:text-4xl lg:text-[35px] text-brick-red mb-2 lg:mb-4"
-            >
-              Payment Methods
-            </h3>
-            <p class="font-medium text-xs lg:text-[22px] leading-tight">
+            <h3 class="faq-title">Payment Methods</h3>
+            <p class="faq-text">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
           </li>
           <li class="mb-8">
-            <h3
-              class="font-semibold lg:text-4xl lg:text-[35px] text-brick-red mb-2 lg:mb-4"
-            >
-              Payment Methods
-            </h3>
-            <p class="font-medium text-xs lg:text-[22px] leading-tight">
+            <h3 class="faq-title">Payment Methods</h3>
+            <p class="faq-text">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
           </li>
           <li class="mb-8">
-            <h3
-              class="font-semibold lg:text-4xl lg:text-[35px] text-brick-red mb-2 lg:mb-4"
-            >
-              Payment Methods
-            </h3>
-            <p class="font-medium text-xs lg:text-[22px] leading-tight">
+            <h3 class="faq-title">Payment Methods</h3>
+            <p class="faq-text">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
           </li>
           <li>
-            <h3
-              class="font-semibold lg:text-4xl lg:text-[35px] text-brick-red mb-2 lg:mb-4"
-            >
-              Payment Methods
-            </h3>
-            <p class="font-medium text-xs lg:text-[22px] leading-tight">
+            <h3 class="faq-title">Payment Methods</h3>
+            <p class="faq-text">
               We accept VISA, MasterCard, American Express, Paypal and Binance,
               We accept VISA, MasterCard, American Express, Paypal and Binance.
             </p>
